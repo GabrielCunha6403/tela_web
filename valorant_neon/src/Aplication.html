@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Neon</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Aplication.css" rel="stylesheet">
+    <script>
+        function unhiden() {
+            var element = document.getElementById('menu')  
+            
+            if(element.style.left == '0px'){
+                element.style = "left: -100% !important; opacity: 0 !important;"
+            } else {
+                element.style = "left: 0 !important; opacity: 1 !important;"
+            }
+        }  
+        
+        function open_search() {
+            var element = document.getElementById("textarea")
+            
+            if(element.style.marginLeft == "0px")    
+                element.style.marginLeft = "-256px" 
+            else
+                element.style.marginLeft = "0px" 
+        }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <a id="icon" href="#" onclick='unhiden()'><i class="material-icons dp48">dehaze</i></a>
+        <ul id="menu">
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href='#'>Home</a>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href='#'>Logs</a>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href='#'>FAQ</a>
+            </li>
+            <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href='#'>Github</a>
+            </li>
+        </ul>
+        
+        <div class="search-area">
+            <a href="#" onclick='open_search()'><i class="material-icons dp48">search</i></a>
+            <input type="text" id="textarea">
+        </div>
+
+    </header>
+
+    <div class="escopo">
+        <div class="card" style="background-image: url(https://i.pinimg.com/originals/f4/1a/63/f41a63734004a2fb34df0efe1d5c92c3.png);">
+            <span style="
+                background: linear-gradient(90deg, transparent, rgb(17, 0, 255));"></span>
+            <span style="
+                background: linear-gradient(180deg, transparent, rgb(17, 0, 255));"></span>
+            <span style="
+                background: linear-gradient(270deg, transparent, rgb(17, 0, 255));"></span>
+            <span style="
+                background: linear-gradient(0deg, transparent, rgb(17, 0, 255));"></span>
+        </div>
+        <div class="card" style="background-image: url(https://i.pinimg.com/originals/1b/67/e3/1b67e338c39430d2820c5bb19e137e38.jpg);">
+            <span style="
+                background: linear-gradient(90deg, transparent, rgb(61, 54, 85));"></span>
+            <span style="
+                background: linear-gradient(180deg, transparent, rgb(61, 54, 85));"></span>
+            <span style="
+                background: linear-gradient(270deg, transparent, rgb(61, 54, 85));"></span>
+            <span style="
+                background: linear-gradient(0deg, transparent, rgb(61, 54, 85));"></span>
+        </div>
+        <div class="card" style="background-image: url(https://i.pinimg.com/originals/75/02/e1/7502e1505ab906dc739cefebed94de1f.jpg);">
+            <span style="
+                background: linear-gradient(90deg, transparent, rgb(153, 44, 222));"></span>
+            <span style="
+                background: linear-gradient(180deg, transparent, rgb(153, 44, 222));"></span>
+            <span style="
+                background: linear-gradient(270deg, transparent, rgb(153, 44, 222));"></span>
+            <span style="
+                background: linear-gradient(0deg, transparent, rgb(153, 44, 222));"></span>
+        </div>
+        <div class="card" style="background-image: url(https://i.pinimg.com/originals/40/69/7e/40697ee8241b41f0300096a7f92c460b.jpg);">
+            <span style="
+                background: linear-gradient(90deg, transparent, rgb(238, 143, 49));"></span>
+            <span style="
+                background: linear-gradient(180deg, transparent, rgb(238, 143, 49));"></span>
+            <span style="
+                background: linear-gradient(270deg, transparent, rgb(238, 143, 49));"></span>
+            <span style="
+                background: linear-gradient(0deg, transparent, rgb(238, 143, 49));"></span>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+        });
+        
+    </script>
+</body>
+
+
+</html>
