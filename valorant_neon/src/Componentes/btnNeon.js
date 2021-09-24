@@ -17,13 +17,13 @@ export default class Pergunta extends Component {
     render() {
 
         return (
-            <>
+            <div>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <a href='#' >{this.props.title}</a>
-            </>
+            </div>
         )
     }
 }

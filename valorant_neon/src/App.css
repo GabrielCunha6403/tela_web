@@ -173,10 +173,11 @@ header input:focus-visible{
   display: flex;
   width: 80%;
   padding: 30px 30px;
-  background-color: rgb(17, 17, 17);
+  background-image: url(https://cdn1.dotesports.com/wp-content/uploads/sites/3/2020/12/19130323/VAL-Agent-14-2048x1152-1.jpg);
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  box-shadow: inset 1px 1px 10px black;
   overflow: hidden;
 }
 
