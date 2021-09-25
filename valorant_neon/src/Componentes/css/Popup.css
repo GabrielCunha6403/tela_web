@@ -1,0 +1,39 @@
+.popup{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #00000080;
+    width: 100% !important;
+    height: 100vh !important;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.popup .escopo-popup{
+    display: flex;
+    position: absolute;
+    height: 720px;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 41);
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.escopo-popup .btnclose{
+    padding: 10px;
+    height: 24px;
+    position: absolute;
+}
+
+.escopo-popup .container-popup{
+    padding: 45px 25px;
+;
+}
+
+.escopo-popup img{
+    object-fit: cover;
+    height: 100%;
+    width: 400px;
+}

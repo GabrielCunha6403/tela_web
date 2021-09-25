@@ -1,4 +1,4 @@
-import './btnNeon.css'
+import '../css/btnNeon.css'
 import React, { Component } from "react";
 
 
@@ -17,12 +17,12 @@ export default class Pergunta extends Component {
     render() {
 
         return (
-            <div>
+            <div className="btnNeon" id="btnNeon">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                <a href='#' >{this.props.title}</a>
+                <a href='#'>{this.props.title}</a>
             </div>
         )
     }
