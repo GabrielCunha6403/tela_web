@@ -18,8 +18,8 @@ export default class Popup extends Component {
     }
 
     teste() {
-        var elemento = document.getElementById("popup"+this.props.id).style
-        elemento.style = "display: none;"
+        var element = document.getElementById('popup' + this.props.id)
+        element.style.display = "none"
     }
 
 
@@ -33,7 +33,6 @@ export default class Popup extends Component {
                         <video muted controls>
                             <source src={video} type="video/mp4"/>
                         </video>
-                        
                     </div>    
                 </div>
             </div>

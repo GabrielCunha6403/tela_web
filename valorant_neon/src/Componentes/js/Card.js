@@ -32,12 +32,12 @@ export default class Pergunta extends Component {
 
         return (
             <div onClick={this.open}>
-                <Tilt class="card" data-tilt style={style}>
-                    <span style= {{background: `linear-gradient(90deg, transparent, ${this.props.color})`}}></span>
+                <div class="card" style={style}>
+                    {/*<span style= {{background: `linear-gradient(90deg, transparent, ${this.props.color})`}}></span>
                     <span style= {{background: `linear-gradient(180deg, transparent, ${this.props.color})`}}></span>
                     <span style= {{background: `linear-gradient(270deg, transparent, ${this.props.color})`}}></span>
-                    <span style= {{background: `linear-gradient(0deg, transparent, ${this.props.color})`}}></span>
-                </Tilt>
+                    <span style= {{background: `linear-gradient(0deg, transparent, ${this.props.color})`}}></span>*/}
+                </div>
                 <Popup id={this.state.num} title="relou" sub="reloudnv" bgimg={this.props.bgimg} video="../video1.mp4" />
             </div>
         )
