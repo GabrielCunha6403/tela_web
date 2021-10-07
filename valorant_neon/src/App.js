@@ -33,7 +33,7 @@ function App() {
             <input type="text" id="textarea"/>
         </div>
 
-    </header>
+      </header>
 
       <div class="escopo">
         <Card num="1" color='rgb(164, 69, 153)' bgimg='https://i.pinimg.com/originals/75/02/e1/7502e1505ab906dc739cefebed94de1f.jpg'/>
